@@ -8,7 +8,7 @@ AUTHOR: ANONYMOUS341 THE LAZY SCRIPT
 SUPPORT: kalilinuxhackersaround@gmail.com
 youtube: https://www.youtube.com/channel/UCU4_WISdoFVYT21BxeRGSbQ
 USE AS ROOT
-NO INSTALLATION REQUIRED
+INSTALLATION: python setup.py
 usage: sudo python lazy.py
 xxxxx ./lazy.py xxxxxx(wrong
 
