@@ -4,6 +4,10 @@ if os.getuid() != 0:
         print("Are you root? Please execute as root")
         print("try sudo python lazy.py")
         exit()
+def nikto():
+  w = raw_input("type url to scan: ")
+  w1 = "nikto -h %s" %(w,)
+  os.system(w1)
 def spoof():
   f = raw_input("enter the email address from which you want to send: ")
   t = raw_input("enter the email address to which you want to send: ")
@@ -104,17 +108,20 @@ def php():
   elif cont == "Y":
     os.system("python lazy.py")
 print '''
-    _    _   _  ___  _   ___   ____  __  ___  _   _ ____    _____ _  _   _ 
-   / \  | \ | |/ _ \| \ | \ \ / /  \/  |/ _ \| | | / ___|  |___ /| || | / |
-  / _ \ |  \| | | | |  \| |\ V /| |\/| | | | | | | \___ \    |_ \| || |_| |
- / ___ \| |\  | |_| | |\  | | | | |  | | |_| | |_| |___) |  ___) |__   _| |
-/_/   \_\_| \_|\___/|_| \_| |_| |_|  |_|\___/ \___/|____/  |____/   |_| |_|
-  
-                Author: ANONYMOUS341       THE LAZY SCRIPT
-NOTE: USE AS ROOT
-CONTACT: kalilinuxhackersaround@gmail.com
-Youtube: https://www.youtube.com/channel/UCU4_WISdoFVYT21BxeRGSbQ
-MORE OPTIONS WILL COME IN THE NEXT UPDATE
+    ____________________________________________________________________________
+   |    _    _   _  ___  _   ___   ____  __  ___  _   _ ____    _____ _  _   _  |
+   |   / \  | \ | |/ _ \| \ | \ \ / /  \/  |/ _ \| | | / ___|  |___ /| || | / | | 
+   |  / _ \ |  \| | | | |  \| |\ V /| |\/| | | | | | | \___ \    |_ \| || |_| | |
+   | / ___ \| |\  | |_| | |\  | | | | |  | | |_| | |_| |___) |  ___) |__   _| | |
+   |/_/   \_\_| \_|\___/|_| \_| |_| |_|  |_|\___/ \___/|____/  |____/   |_| |_| |
+   |____________________________________________________________________________|  
+                    Author: ANONYMOUS341       THE LAZY SCRIPT
+
+                     CONTACT: kalilinuxhackersaround@gmail.com
+
+        Youtube: https://www.youtube.com/channel/UCU4_WISdoFVYT21BxeRGSbQ
+
+                MORE OPTIONS WILL BE AVAILABLE IN THE NEXT UPDATE
 
 1> start apache2 server
 2> reboot pc
@@ -130,8 +137,10 @@ MORE OPTIONS WILL COME IN THE NEXT UPDATE
 12> ping a website
 13> spoof an email /just type to,from,subject and message u dont need any smtp
 server or account/
+14> scan a website with nikto /find vulnerabilities/
+15> open firefox
 '''
-a = input("what do you want to do? : ")
+a = input("                              what do you want to do? : ")
 if a == 1:
   os.system("figlet server started")
   os.system('service apache2 start')
@@ -171,6 +180,10 @@ elif a == 12:
   ping()
 elif a == 13:
   spoof()
+elif a == 14:
+  nikto()
+elif a == 15:
+  os.system("firefox")
 else:
   print("error choose 1 2 3 4 etc...")
   cont = raw_input("do you want to continue with lazy Y/N : ")
