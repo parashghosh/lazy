@@ -1,0 +1,14 @@
+#! /usr/bin/python
+import os
+if os.getuid() != 0:
+        print("Are you root? Please execute as root")
+        print("try sudo ./setup")
+        exit()
+import os
+os.system("sudo mv ly /usr/bin/")
+os.system("sudo mv slowloris /usr/bin/")
+os.system("sudo pip install termcolor")
+os.system("sudo apt-get install figlet")
+os.system("figlet installation success")
+print "type ly on your terminal to start using the LAZY script"
+exit()
