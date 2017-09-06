@@ -2,11 +2,24 @@
 #made by ANONYMOUS341
 import os
 from termcolor import colored
+from validate_email import validate_email
 if os.getuid() != 0:
         print("Are you root? Please execute as root")
         print("try sudo ly")
         exit()
 os.system("clear")
+def chec():
+    ema = raw_input("Type the email to search: ")
+    is_valid = validate_email(ema,verify=True)
+    if str(is_valid).upper() == "TRUE":
+        print "[+]Email Found"
+    else:
+	    print "[+]Email not found"
+    cont = raw_input("do you want to continue with lazy Y/N : ")
+    if cont == "y":
+      os.system("ly")
+    elif cont == "Y":
+      os.system("ly")
 def nikto():
   w = raw_input("type url to scan: ")
   w1 = "nikto -h %s" %(w,)
@@ -145,6 +158,7 @@ server or account)
 15. open firefox
 16. show your local ip address
 17. show your public ip address
+18. check if email exists
 ''', 'blue')
 
 a = input("                              what do you want to do? : ")
@@ -206,6 +220,8 @@ elif a == 17:
     os.system("ly")
   elif cont == "Y":
     os.system("ly")
+elif a == 18:
+  chec()
 else:
   print("error choose 1 2 3 4 etc...")
   cont = raw_input("do you want to continue with lazy Y/N : ")
