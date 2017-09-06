@@ -143,6 +143,8 @@ print colored('''
 server or account)
 14. scan a website with nikto (find vulnerabilities)
 15. open firefox
+16. show your local ip address
+17. show your public ip address
 ''', 'blue')
 
 a = input("                              what do you want to do? : ")
@@ -189,6 +191,21 @@ elif a == 14:
   nikto()
 elif a == 15:
   os.system("firefox")
+elif a == 16:
+  os.system("ifconfig")
+  cont = raw_input("do you want to continue with lazy Y/N : ")
+  if cont == "y":
+    os.system("ly")
+  elif cont == "Y":
+    os.system("ly")
+elif a == 17:
+  ip = "dig +short myip.opendns.com @resolver1.opendns.com"
+  i2 = os.system(ip)
+  cont = raw_input("do you want to continue with lazy Y/N : ")
+  if cont == "y":
+    os.system("ly")
+  elif cont == "Y":
+    os.system("ly")
 else:
   print("error choose 1 2 3 4 etc...")
   cont = raw_input("do you want to continue with lazy Y/N : ")
