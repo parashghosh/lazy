@@ -1,4 +1,4 @@
-[![screenshot](https://github.com/rajethicalhacker/lazy/raw/master/README.MD)](#features)
+[(https://github.com/rajethicalhacker/lazy/raw/master/sc.png)]
 AUTHOR: ANONYMOUS341 THE LAZY SCRIPT
 SUPPORT: kalilinuxhackersaround@gmail.com
 youtube: https://www.youtube.com/channel/UCU4_WISdoFVYT21BxeRGSbQ
