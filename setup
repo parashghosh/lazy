@@ -5,6 +5,8 @@ if os.getuid() != 0:
         print("try sudo ./setup")
         exit()
 import os
+os.system("pip install validate_email")
+os.system("pip install pyDNS")
 os.system("sudo mv ly /usr/bin/")
 os.system("sudo mv slowloris /usr/bin/")
 os.system("sudo pip install termcolor")
