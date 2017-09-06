@@ -1,4 +1,4 @@
-[(https://github.com/rajethicalhacker/lazy/raw/master/sc.png)]
+[![screenshot](https://github.com/rajethicalhacker/lazy/raw/master/sc.png)](#looks)
 AUTHOR: ANONYMOUS341 THE LAZY SCRIPT
 SUPPORT: kalilinuxhackersaround@gmail.com
 youtube: https://www.youtube.com/channel/UCU4_WISdoFVYT21BxeRGSbQ
